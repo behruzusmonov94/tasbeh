@@ -11,10 +11,13 @@ let count = 0;
 
 btn.addEventListener('click', () => {
     btn.style = 'font-size: 4em';
-    btn.innerText = `${count+=1}`;   
-
+    if(count < 33){
+    btn.innerHTML = `<span style="font-size: 22px">Subhanalloh</span><br> ${count+=1}`;   
+    }
     if(count == 33){
         count = 0;
+        btn.innerHTML = `<span style="font-size: 22px">Alhamdulillah</span><br> ${count+=1}`;   
+
     }
 
     localStorage.setItem('allCount', allCount+=1);
