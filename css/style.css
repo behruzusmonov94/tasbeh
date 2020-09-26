@@ -30,8 +30,8 @@ body {
   height: 200px;
   border-radius: 50%;
   border: solid 4px #06d6a0;
-  color: #06d6a0;
-  background-color: #c5ece2;
+  color: #fafafa;
+  background-color: #06d6a0;
   transition: all 200ms ease;
   outline: none;
   cursor: pointer;
@@ -49,7 +49,8 @@ body {
   padding: 10px 20px;
   margin: 10px;
   border: solid 2px #93e7d1;
-  background-color: #b6ebdd;
+  background-color: #93e7d1;
+  color: #118667;
   border-radius: 10px;
   font-size: medium;
   transition: all 200ms ease;

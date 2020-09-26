@@ -1,28 +1,26 @@
 const mainCount = document.getElementById('main-count');
 const btn = document.getElementById('btn');
 
-if (localStorage.getItem('count') === null && localStorage.getItem('allCount') === null) {
-    localStorage.setItem('count', '1');
-    localStorage.setItem('allCount', '1');
-}
 
-let count = Number(localStorage.getItem('count'));
-let allCount = Number(localStorage.getItem('allCount'));
-const newLocal = '34';
+if(localStorage.getItem('allCount') === null){
+    localStorage.setItem('allCount', '0');
+}
+let allCount = parseInt(localStorage.getItem('allCount'));
+let count = 0;
+
+
 btn.addEventListener('click', () => {
     btn.style = 'font-size: 4em';
-    localStorage.setItem('count', count);
-    btn.textContent = `${count++}`;
-    
+    btn.innerText = `${count+=1}`;   
 
-    mainCount.textContent = `${allCount++}`
-    // localStorage.setItem('allCount', count);
-
-    if (allCount == 34) {
-        console.log('check')
-        allCount = 1;
+    if(count == 33){
+        count = 0;
     }
+
+    localStorage.setItem('allCount', allCount+=1);
+    mainCount.innerText = `Jami: ${localStorage.getItem('allCount')}`;
 })
+mainCount.innerText = `Jami: ${localStorage.getItem('allCount')}`;
 
 const resetCount = document.getElementById('resetCount');
 
