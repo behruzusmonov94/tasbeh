@@ -24,7 +24,7 @@ body {
   text-align: center;
 }
 
-.btn {
+.main-btn {
   font-size: 2em;
   min-width: 200px;
   height: 200px;
@@ -36,16 +36,16 @@ body {
   outline: none;
   cursor: pointer;
 }
-.btn:hover {
+.main-btn:hover {
   background-color: #06d6a0;
   color: #fafafa;
 }
-.btn:active {
+.main-btn:active {
   background-color: #0da079;
   color: #fafafa;
 }
 
-#resetCount {
+#resetCount, .btn {
   padding: 10px 20px;
   margin: 10px;
   border: solid 2px #93e7d1;
@@ -57,14 +57,20 @@ body {
   cursor: pointer;
   outline: none;
 }
-#resetCount:hover {
+#resetCount:hover, .btn:hover {
   background-color: #06d6a0;
   color: #fafafa;
   border: solid 2px #06d6a0;
 }
-#resetCount:active {
+#resetCount:active, .btn:active {
   background-color: #0da079;
   color: #fafafa;
+}
+
+.active {
+  background-color: #06d6a0;
+  color: #fafafa;
+  border: solid 2px #06d6a0;
 }
 
 /*# sourceMappingURL=style.css.map */

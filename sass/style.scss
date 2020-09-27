@@ -27,7 +27,7 @@ body {
     // justify-content: start;
 }
 
-.btn {
+.main-btn {
     font-size: 2em;
     min-width: 200px;
     height: 200px;
@@ -75,4 +75,13 @@ body {
         background-color: #0da079;
         color: #fafafa;
     }
+}
+
+.btn{
+    @extend #resetCount;
+}
+.active{
+    background-color: #06d6a0;
+        color: #fafafa;
+        border: solid 2px #06d6a0;
 }
